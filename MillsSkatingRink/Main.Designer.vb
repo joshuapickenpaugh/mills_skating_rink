@@ -143,6 +143,7 @@ Partial Class frmMain
         '
         'lblAverageScore
         '
+        Me.lblAverageScore.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer))
         Me.lblAverageScore.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle
         Me.lblAverageScore.Location = New System.Drawing.Point(70, 100)
         Me.lblAverageScore.Name = "lblAverageScore"

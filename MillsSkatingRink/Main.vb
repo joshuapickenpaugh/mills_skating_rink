@@ -40,6 +40,12 @@ Public Class frmMain
 
         Integer.TryParse(lstScore.SelectedItem.ToString, sktrCalc.SelectedScore)
 
-        lblTotalScore.Text = sktrCalc.GetTotalScore().ToString()
+        'Counts how many times this button has been clicked, which translates to 
+        'number of scores for this skater:
+        sktrCalc.GetNumberOfScores()
+
+        lblTotalScore.Text = sktrCalc.GetTotalScore()
+        lblNumScores.Text = sktrCalc.NumOfScores
+        lblAverageScore.Text = sktrCalc.GetAverageScore()
     End Sub
 End Class
